@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofía Ruiz · Fullstack Developer</title>
+  <meta name="description" content="Sofía Ruiz — Fullstack Developer especializada en backend (Node.js, NestJS, TypeScript, PostgreSQL) y desarrollo asistido por IA (RAG, chatbots, LLMs)." />
+  <meta name="author" content="Sofía Ruiz" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sofía Ruiz · Fullstack Developer" />
+  <meta property="og:description" content="Backend & AI-assisted development. Node.js · NestJS · TypeScript · PostgreSQL · RAG · LLMs." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">SR<span class="nav__brand-dot">.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">Perfil</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+      <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="#credentials" data-i18n="nav.credentials">Credenciales</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-toggle__opt" data-lang="es">ES</span>
+        <span class="lang-toggle__sep">/</span>
+        <span class="lang-toggle__opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__glow"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.status">Disponible para nuevas oportunidades</span>
+        </p>
+        <h1 class="hero__title">Sofía Ruiz</h1>
+        <p class="hero__role">
+          <span data-i18n="hero.role">Fullstack Developer</span>
+          <span class="hero__role-sep">·</span>
+          <span class="hero__accent" data-i18n="hero.roleAccent">Backend &amp; AI</span>
+        </p>
+        <p class="hero__tagline" data-i18n="hero.tagline">
+          Construyo soluciones end-to-end con Node.js, NestJS y TypeScript, e integro
+          inteligencia artificial (RAG, chatbots, LLMs) para resolver problemas reales.
+        </p>
+        <div class="hero__meta">
+          <span class="hero__meta-item">📍 <span data-i18n="hero.location">Córdoba, Argentina</span></span>
+          <span class="hero__meta-item">🌐 <span data-i18n="hero.remote">Remoto / Internacional</span></span>
+          <span class="hero__meta-item">🗣️ <span data-i18n="hero.langs">Inglés C2 · Español nativo</span></span>
+        </div>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary" data-i18n="hero.ctaProjects">Ver proyectos</a>
+          <a href="assets/docs/cv-es.pdf" class="btn btn--ghost" id="cvLink" target="_blank" rel="noopener" data-i18n="hero.ctaCv">Descargar CV</a>
+        </div>
+        <div class="hero__socials">
+          <a href="https://github.com/sofiaruiz1801" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/sofiaruiz-fullstack" id="linkedinLink" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:sofiaruiz.1505@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+      <div class="hero__stack" aria-hidden="true">
+        <div class="stack-chip">Node.js</div>
+        <div class="stack-chip">NestJS</div>
+        <div class="stack-chip">TypeScript</div>
+        <div class="stack-chip">PostgreSQL</div>
+        <div class="stack-chip">RAG · pgvector</div>
+        <div class="stack-chip">React · Next.js</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title" data-i18n="about.title">Perfil</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__bio">
+          <p data-i18n="about.p1">
+            Desarrolladora Fullstack con foco en <strong>backend</strong>, orientada a la
+            automatización, las integraciones y la <strong>inteligencia artificial aplicada</strong>
+            a productos digitales. Vengo de las ciencias exactas y la docencia, y esa base me da
+            un enfoque analítico y estructurado para resolver problemas.
+          </p>
+          <p data-i18n="about.p2">
+            Desarrollo soluciones end-to-end con Node.js, TypeScript, React y PostgreSQL, y trabajo
+            con herramientas de IA como Claude, GPT y Gemini para acelerar el desarrollo. Perfil
+            autodidacta, resolutivo y orientado a la ejecución. Actualmente curso Ingeniería en
+            Sistemas en la UTN.
+          </p>
+        </div>
+        <div class="about__facts">
+          <div class="fact">
+            <span class="fact__num">800+</span>
+            <span class="fact__label" data-i18n="about.fact1">horas de formación intensiva (Henry)</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num">4+</span>
+            <span class="fact__label" data-i18n="about.fact2">proyectos backend/fullstack</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num">C2</span>
+            <span class="fact__label" data-i18n="about.fact3">nivel de inglés (Proficient)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI SPOTLIGHT -->
+    <section class="section ai-spotlight" id="ai">
+      <div class="ai-spotlight__inner">
+        <span class="ai-spotlight__badge" data-i18n="ai.badge">✦ Diferenciador</span>
+        <h2 class="ai-spotlight__title" data-i18n="ai.title">Desarrollo con Inteligencia Artificial</h2>
+        <p class="ai-spotlight__lead" data-i18n="ai.lead">
+          No solo uso IA para escribir código más rápido: construyo funcionalidades de IA en producción.
+        </p>
+        <div class="ai-grid">
+          <div class="ai-card">
+            <h3 data-i18n="ai.c1.title">RAG sobre pgvector</h3>
+            <p data-i18n="ai.c1.body">Sistema de recuperación aumentada (Retrieval-Augmented Generation) para respuestas contextualizadas sobre datos propios.</p>
+          </div>
+          <div class="ai-card">
+            <h3 data-i18n="ai.c2.title">Chatbot con streaming</h3>
+            <p data-i18n="ai.c2.body">Chatbot de análisis con respuestas en tiempo real vía Server-Sent Events (SSE).</p>
+          </div>
+          <div class="ai-card">
+            <h3 data-i18n="ai.c3.title">AI-assisted development</h3>
+            <p data-i18n="ai.c3.body">Uso intensivo de Claude, GPT, Gemini y Antigravity para acelerar desarrollo, debugging y prototipado iterativo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title" data-i18n="skills.title">Stack técnico</h2>
+      </div>
+      <div class="skills__grid" id="skillsGrid">
+        <div class="skill-group">
+          <h3 class="skill-group__title">✦ <span data-i18n="skills.g1">IA &amp; Innovación</span></h3>
+          <div class="skill-tags">
+            <span>Claude</span><span>GPT</span><span>Gemini</span><span>Antigravity</span>
+            <span>RAG</span><span>pgvector</span><span>Chatbots · SSE</span><span>AI-assisted dev</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">⚙ <span data-i18n="skills.g2">Backend &amp; Desarrollo</span></h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>NestJS</span><span>Express.js</span><span>TypeScript</span>
+            <span>JavaScript</span><span>Python</span><span>React</span><span>Next.js</span><span>React Native · Expo</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">🗄 <span data-i18n="skills.g3">Bases de datos</span></h3>
+          <div class="skill-tags">
+            <span>PostgreSQL</span><span>MongoDB</span><span>SQL</span><span>TypeORM</span>
+            <span>Mongoose</span><span>Firestore · Firebase</span><span>Redis</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">🔗 <span data-i18n="skills.g4">Integraciones &amp; Automatización</span></h3>
+          <div class="skill-tags">
+            <span>REST APIs</span><span>Webhooks</span><span>Callbacks</span><span>Cron Jobs</span>
+            <span>Stripe</span><span>Google Calendar · OAuth</span><span>Resend</span><span>Luxon · IANA</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">☁ <span data-i18n="skills.g5">Cloud &amp; Tools</span></h3>
+          <div class="skill-tags">
+            <span>AWS · EC2 · S3</span><span>Git</span><span>GitHub</span><span>Postman · Insomnia</span><span>Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title" data-i18n="exp.title">Experiencia</h2>
+      </div>
+      <div class="timeline">
+        <article class="tl-item tl-item--featured">
+          <div class="tl-item__marker"></div>
+          <div class="tl-item__body">
+            <span class="tl-item__badge" data-i18n="exp.featured">Destacado</span>
+            <div class="tl-item__head">
+              <h3>Backend Developer <span data-i18n="exp.job1.role">(Intern)</span> · DualTherapist</h3>
+              <span class="tl-item__date">Mar — Jun 2026</span>
+            </div>
+            <p class="tl-item__lead" data-i18n="exp.job1.lead">
+              Lideré el desarrollo end-to-end del módulo de agenda y turnos de una plataforma de gestión
+              terapéutica (backend, web y app móvil), en el marco de las prácticas del programa SoyHenry.
+            </p>
+            <ul class="tl-item__list">
+              <li data-i18n="exp.job1.b1">Diseño e implementación completa de los módulos de <strong>appointments</strong> y <strong>schedule configuration</strong>: lógica backend, APIs REST, integraciones y frontend.</li>
+              <li data-i18n="exp.job1.b2">Sistema avanzado de agenda con vistas diaria/semanal/mensual, gestión visual de estados y <strong>versionado de configuraciones</strong> para cambios operativos programados.</li>
+              <li data-i18n="exp.job1.b3">Contribución al <strong>servicio de IA</strong>: RAG sobre pgvector, chatbot de análisis con streaming (SSE) y dashboards de indicadores.</li>
+              <li data-i18n="exp.job1.b4">Integraciones: <strong>Google Calendar</strong> (OAuth, invitaciones, Meet), <strong>Resend</strong> (emails transaccionales), Nager.Date (feriados) y manejo riguroso de <strong>zonas horarias (IANA)</strong>.</li>
+              <li data-i18n="exp.job1.b5">Enfoque <strong>TDD</strong>, cuidando calidad y mantenibilidad del código.</li>
+            </ul>
+            <div class="tl-item__tags">
+              <span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Next.js</span><span>Expo · React Native</span><span>pgvector</span><span>OAuth</span><span>TDD</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <div class="tl-item__marker"></div>
+          <div class="tl-item__body">
+            <div class="tl-item__head">
+              <h3 data-i18n="exp.job2.role">Docente de Matemática, Física y Química · Academia La Piero</h3>
+              <span class="tl-item__date">2019 — <span data-i18n="exp.present">Actualidad</span></span>
+            </div>
+            <p class="tl-item__lead" data-i18n="exp.job2.lead">
+              Diseño y facilito experiencias de aprendizaje para ingresantes universitarios, aplicando
+              metodologías activas y tecnología educativa (Moodle). Análisis lógico, resolución de
+              problemas complejos y comunicación clara de conceptos técnicos.
+            </p>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <div class="tl-item__marker"></div>
+          <div class="tl-item__body">
+            <div class="tl-item__head">
+              <h3 data-i18n="exp.job3.role">Docente Integradora · Programa Coros y Orquestas (Ministerio de Educación)</h3>
+              <span class="tl-item__date">2015 — 2019</span>
+            </div>
+            <p class="tl-item__lead" data-i18n="exp.job3.lead">
+              Coordinación operativa, administrativa y pedagógica de agrupaciones musicales en múltiples
+              instituciones. Rol articulador entre escuelas, equipos docentes y familias.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title" data-i18n="proj.title">Proyectos</h2>
+      </div>
+      <div class="projects__grid">
+        <article class="proj-card">
+          <div class="proj-card__top">
+            <h3>CleenGo</h3>
+            <a href="https://github.com/sofiaruiz1801/CleenGo-Back" target="_blank" rel="noopener" class="proj-card__link" aria-label="GitHub repo">↗</a>
+          </div>
+          <p class="proj-card__desc" data-i18n="proj.p1">
+            Servicios backend para plataforma de turnos y gestión administrativa. Automatización de
+            tareas internas con Cron Jobs y procesos asíncronos, integraciones externas y optimización
+            de performance en producción. Proyecto final del bootcamp Henry.
+          </p>
+          <div class="proj-card__tags"><span>Node.js</span><span>NestJS</span><span>PostgreSQL</span><span>Redis</span></div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-card__top">
+            <h3 data-i18n="proj.p2.title">Plataforma E-commerce</h3>
+            <a href="https://github.com/sofiaruiz1801/PIM4BE-sofiaRuiz" target="_blank" rel="noopener" class="proj-card__link" aria-label="GitHub repo">↗</a>
+          </div>
+          <p class="proj-card__desc" data-i18n="proj.p2.desc">
+            APIs REST para productos, usuarios, órdenes y checkout. Autenticación y autorización por
+            roles, lógica transaccional y arquitectura backend escalable.
+          </p>
+          <div class="proj-card__tags"><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span></div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-card__top">
+            <h3>SkillNet</h3>
+            <a href="https://github.com/sofiaruiz1801/SkillNet-Back" target="_blank" rel="noopener" class="proj-card__link" aria-label="GitHub repo">↗</a>
+          </div>
+          <p class="proj-card__desc" data-i18n="proj.p3">
+            Backend de una plataforma colaborativa, desarrollada en equipo con TypeScript. Diseño de
+            APIs y arquitectura de servicios.
+          </p>
+          <div class="proj-card__tags"><span>TypeScript</span><span>Node.js</span><span>Teamwork</span></div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-card__top">
+            <h3>Turnero PIERO</h3>
+            <a href="https://github.com/sofiaruiz1801/PIM3-turneroPIERO" target="_blank" rel="noopener" class="proj-card__link" aria-label="GitHub repo">↗</a>
+          </div>
+          <p class="proj-card__desc" data-i18n="proj.p4">
+            Aplicación fullstack de gestión de turnos para una academia educativa. Sistema de reservas
+            y administración de horarios.
+          </p>
+          <div class="proj-card__tags"><span>JavaScript</span><span>Fullstack</span><span>Scheduling</span></div>
+        </article>
+      </div>
+      <p class="projects__note">
+        <a href="https://github.com/sofiaruiz1801" target="_blank" rel="noopener" data-i18n="proj.more">Ver todos los repositorios en GitHub →</a>
+      </p>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="section" id="credentials">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title" data-i18n="cred.title">Credenciales</h2>
+      </div>
+      <div class="cred__grid">
+        <a href="assets/docs/carta-recomendacion.pdf" target="_blank" rel="noopener" class="cred-card cred-card--highlight">
+          <span class="cred-card__icon">⭐</span>
+          <h3 data-i18n="cred.rec.title">Carta de Recomendación</h3>
+          <p data-i18n="cred.rec.desc">DualTherapist — recomendación sin reservas de los fundadores del proyecto (ES / EN).</p>
+          <span class="cred-card__cta" data-i18n="cred.view">Ver documento →</span>
+        </a>
+        <a href="assets/docs/certificado-dualtherapist.pdf" target="_blank" rel="noopener" class="cred-card">
+          <span class="cred-card__icon">🎓</span>
+          <h3 data-i18n="cred.dt.title">Certificado de Prácticas · DualTherapist</h3>
+          <p data-i18n="cred.dt.desc">90 días como Desarrolladora Full-Stack. Web, mobile y servicio de IA (RAG, chatbot, OAuth).</p>
+          <span class="cred-card__cta" data-i18n="cred.view">Ver documento →</span>
+        </a>
+        <a href="assets/docs/certificado-henry.pdf" target="_blank" rel="noopener" class="cred-card">
+          <span class="cred-card__icon">🏅</span>
+          <h3 data-i18n="cred.henry.title">Certificado · Henry Full Stack</h3>
+          <p data-i18n="cred.henry.desc">800 horas de Desarrollo Web Full Stack. JS, TypeScript, React, Node, SQL/NoSQL.</p>
+          <span class="cred-card__cta" data-i18n="cred.view">Ver documento →</span>
+        </a>
+      </div>
+
+      <div class="edu">
+        <div class="edu__col">
+          <h3 class="edu__title" data-i18n="cred.eduTitle">Educación</h3>
+          <ul class="edu__list">
+            <li><strong>Ingeniería en Sistemas</strong> · UTN <span class="edu__date">2025 — <span data-i18n="exp.present">Actualidad</span></span></li>
+            <li><strong>Full Stack Web Development</strong> · Henry Bootcamp <span class="edu__date">2025 — 2026</span></li>
+            <li><strong data-i18n="cred.chem">Ingeniería Química</strong> · UNC <span class="edu__date">2010 — 2020</span></li>
+          </ul>
+        </div>
+        <div class="edu__col">
+          <h3 class="edu__title" data-i18n="cred.trainingTitle">Formación complementaria</h3>
+          <ul class="edu__list">
+            <li>CS50x · Introduction to Computer Science — HarvardX</li>
+            <li>CS50P · Programming with Python — HarvardX</li>
+            <li>CS50W · Web Programming with Python &amp; JavaScript</li>
+            <li>AWS Cloud Program <span class="edu__date" data-i18n="cred.inProgress">En curso</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact__inner">
+        <span class="section__num">06</span>
+        <h2 class="contact__title" data-i18n="contact.title">Construyamos algo juntos</h2>
+        <p class="contact__lead" data-i18n="contact.lead">
+          Estoy abierta a roles de backend, fullstack y desarrollo con IA — remoto o en Córdoba.
+          Respondo rápido.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:sofiaruiz.1505@gmail.com" class="btn btn--primary">✉ sofiaruiz.1505@gmail.com</a>
+          <a href="https://github.com/sofiaruiz1801" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+          <a href="https://www.linkedin.com/in/sofiaruiz-fullstack" id="linkedinLink2" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+        </div>
+        <p class="contact__phone">📱 +54 351 6536040</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Sofía Ruiz · <span data-i18n="footer.built">Diseñado y desarrollado por mí</span></p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
