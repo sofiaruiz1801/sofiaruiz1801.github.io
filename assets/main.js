@@ -49,7 +49,7 @@ const I18N = {
     'exp.title': 'Experience',
     'exp.featured': 'Featured',
     'exp.present': 'Present',
-    'exp.job1.role': '(Intern)',
+    'exp.job1.role': 'Formal internship (Mar–Jun 2026), now an ongoing project collaborator',
     'exp.job1.lead': 'Led the end-to-end development of the scheduling & appointments module of a therapy-management platform (backend, web and mobile app), as part of the SoyHenry program internship.',
     'exp.job1.b1': 'Designed and fully implemented the <strong>appointments</strong> and <strong>schedule configuration</strong> modules: backend logic, REST APIs, integrations and frontend.',
     'exp.job1.b2': 'Advanced scheduling system with daily/weekly/monthly views, visual status management and <strong>configuration versioning</strong> for scheduled operational changes.',
