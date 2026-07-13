@@ -73,7 +73,7 @@ const I18N = {
     'cred.rec.title': 'Letter of Recommendation',
     'cred.rec.desc': 'DualTherapist — an unreserved recommendation from the project founders (ES / EN).',
     'cred.dt.title': 'Internship Certificate · DualTherapist',
-    'cred.dt.desc': '90 days as a Full-Stack Developer. Web, mobile and AI service (RAG, chatbot, OAuth).',
+    'cred.dt.desc': '90 days as a Fullstack Developer. Web, mobile and AI service (RAG, chatbot, OAuth).',
     'cred.henry.title': 'Certificate · Henry Full Stack',
     'cred.henry.desc': '800 hours of Full Stack Web Development. JS, TypeScript, React, Node, SQL/NoSQL.',
     'cred.view': 'View document →',
