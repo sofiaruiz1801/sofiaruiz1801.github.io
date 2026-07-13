@@ -53,7 +53,7 @@ const I18N = {
     'exp.job1.lead': 'Led the end-to-end development of the scheduling & appointments module of a therapy-management platform (backend, web and mobile app), as part of the SoyHenry program internship.',
     'exp.job1.b1': 'Designed and fully implemented the <strong>appointments</strong> and <strong>schedule configuration</strong> modules: backend logic, REST APIs, integrations and frontend.',
     'exp.job1.b2': 'Advanced scheduling system with daily/weekly/monthly views, visual status management and <strong>configuration versioning</strong> for scheduled operational changes.',
-    'exp.job1.b3': 'Contributed to the <strong>AI service</strong>: RAG over pgvector, a streaming analysis chatbot (SSE) and metrics dashboards.',
+    'exp.job1.b3': 'AI service (in progress): <strong>RAG</strong> over pgvector with a user-curated knowledge base, and a <strong>multi-agent chatbot</strong> that generates personalized session analyses (text and Mermaid diagrams) grounded in a user-selected theoretical framework.',
     'exp.job1.b4': 'Integrations: <strong>Google Calendar</strong> (OAuth, invitations, Meet), <strong>Resend</strong> (transactional emails), Nager.Date (holidays) and rigorous <strong>timezone handling (IANA)</strong>.',
     'exp.job1.b5': '<strong>TDD</strong> approach, with strong care for code quality and maintainability.',
     'exp.job2.role': 'Math, Physics & Chemistry Teacher · Academia La Piero',
