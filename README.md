@@ -2,7 +2,7 @@
 
 Portfolio personal (one-page, bilingüe ES/EN) de Sofía Ruiz — Fullstack Developer
 especializada en backend (Node.js · NestJS · TypeScript · PostgreSQL) y desarrollo
-asistido por IA (RAG · chatbots · LLMs).
+asistido por IA (RAG · sistemas multi-agente · LLMs).
 
 Sitio estático sin dependencias ni build step: HTML + CSS + JS puro. Listo para desplegar en GitHub Pages.
 
